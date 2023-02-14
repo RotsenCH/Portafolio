@@ -40,18 +40,18 @@ html {
     }
 
     25% {
-        left: 200px;
+        left: 10px;
         top: 0px;
     }
 
     50% {
-        left: 200px;
-        top: 200px;
+        left: 10px;
+        top: 10px;
     }
 
     75% {
         left: 0px;
-        top: 200px;
+        top: 10px;
     }
 
     100% {
@@ -67,12 +67,12 @@ html {
     }
 
     to {
-        top: 00px;
+        top: 0px;
     }
 }
 
 /*animation-timing-function*/
-@keyframes mymove1 {
+@keyframes mymove_timing {
     from {
         left: 0px;
     }
@@ -99,6 +99,7 @@ html {
     margin: 0 auto;
     padding: 20px 0;
     /* border: 1px solid red; */
+
 }
 
 .navbar .container {
@@ -113,12 +114,14 @@ html {
     text-transform: uppercase;
     font-weight: 900;
     text-decoration: underline;
+
 }
 
 .menu a {
     color: var(--primary);
     font-size: 1.5rem;
     font-weight: 400;
+
 }
 
 .menu a:hover {
@@ -143,6 +146,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: mymove_timing 5s infinite;
+    animation-timing-function: linear;
 }
 
 .showcase-box h1 {
@@ -206,7 +211,7 @@ html {
     margin-bottom: 20px;
     color: var(--secondary);
     position: relative;
-    animation: myfirst 5s 2;
+    animation: myfirst 5s 100;
     animation-direction: alternate;
 }
 
@@ -214,7 +219,7 @@ html {
     line-height: 1.5;
     margin-bottom: 1.5rem;
     position: relative;
-    animation: mymove 3s;
+    animation: mymove 7s;
     animation-fill-mode: forwards;
 }
 
@@ -234,6 +239,7 @@ html {
     background: var(--secondary);
     border: .2em solid var(--primary);
     color: var(--primary);
+
 }
 
 .btn-about:hover {
@@ -256,6 +262,7 @@ html {
 
 .portfolio .title {
     text-align: center;
+    
 }
 
 .portfolio__cards {
@@ -508,6 +515,7 @@ html {
     /* Start of FOOTER styles */
     .footer__texts {
         width: 100%;
+        
     }
 
     .footer__img {
